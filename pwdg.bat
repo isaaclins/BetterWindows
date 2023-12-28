@@ -19,7 +19,7 @@ if /i "%capital%"=="y" (
 )
 
 if /i "%symbols%"=="y" (
-    set characters=%characters%^@#*+-&?!%
+    set characters=%characters%^@#*+-&!%
 )
 
 if /i "%numbers%"=="y" (
@@ -37,8 +37,8 @@ set master-password= %pwd:ECHO=%%
 echo|set/p=%master-password%|clip
 cls
 
-echo %master-password%
-echo WAS COPIED TO CLIPBOARD
-endlocal
 
-pause
+echo PASSWORD WAS COPIED TO CLIPBOARD
+echo enjoy!
+echo made by isaaclins
+endlocal
